@@ -20,9 +20,10 @@
     <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
 
     <!-- Add to calendar button -->
-    <!-- <link rel="stylesheet" href="dist/atcb.min.css"> -->
+    <link rel="stylesheet" href="dist/atcb.min.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1/assets/css/atcb.min.css"> -->
-    <link rel="stylesheet" href="/atcb.min.js" />
+    
+    <script src="/atcb.min.js" async defer></script>
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
@@ -71,7 +72,26 @@
         </section>
 
         <section>
-          
+          <center>
+            <add-to-calendar-button 
+              name="Zakawat&rsquo;s Wedding Ceremony"
+              description="A get together in celebration of the Marriage!"
+              startDate="2023-02-25"
+              startTime="19:00"
+              endDate="2023-02-25"
+              endTime="21:30"
+              timeZone="Asia/Karachi"
+              location="H2V5+924, KRS Wedding Palace, Madina Colony Misrial, Rawalpindi, Punjab 46000, Pakistan"
+              organizer="Zakawat|zsubzwary@gmail.com"
+              iCalFileName="Zakawat&rsquo;s Wedding Invite"
+              buttonStyle="round"
+              trigger="click"
+              size="10"
+              lightMode="dark"
+              options="'Apple','Google','iCal','Outlook.com','Yahoo','Microsoft365','MicrosoftTeams'"
+          ></add-to-calendar-button>
+
+          </center>
         </section>        
 
 
@@ -114,12 +134,7 @@
         ],
       });
     </script>
-    <!-- <script src="dist/atcb.min.js" async defer></script> -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@1"
-      async
-      defer
-    ></script>
+    
     <script>
       function replaceGuestName() {
         try {
